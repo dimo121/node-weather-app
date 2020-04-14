@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Weather</title>
+        <link rel="icon" href="/img/weather.png">
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <div class='main-content'>
+            {{>header}}
+            <p>Use this site to get your weather</p>
+            <form>
+                <input placeholder="Enter location..."/>
+                <button>Search</button>
+            </form>
+            <p id='message-1'></p>
+            <p id='message-2'></p>
+        </div>
+
+        {{>footer}}
+
+        <script src='/js/app.js'></script> 
+    </body>
+</html>
+
+<!-- script tag is added in the body instead of head so that client side js file loads after the form element
+loads. This allows for the event listener in js file to find the form element -->
