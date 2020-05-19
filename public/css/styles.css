@@ -1,5 +1,5 @@
 body {
-    color: #333333;
+    color: white;
     font-family: arial;
     max-width: 70%;
     margin: 0 auto;
@@ -8,6 +8,9 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+
+    background: url('../img/blueground.jpg');
+    background-size: 100%;
 }
 
 footer {
@@ -28,13 +31,16 @@ h1{
 }
 
 header a {
-    color: #888888;
+    color: white;
     margin-right: 16px;
     text-decoration: none;
 }
 
 .main-content {
-    flex-grow: 1;
+    background: rgba(0,139,139,0.7);
+    border-radius: 20px;
+    margin-top: 48px;
+    padding: 32px;
 }
 
 .portrait {
